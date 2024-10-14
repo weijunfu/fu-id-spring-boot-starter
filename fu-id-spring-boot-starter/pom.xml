@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ijunfu.id</groupId>
+        <artifactId>fu-id-spring-boot-starter-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>fu-id-spring-boot-starter</artifactId>
+
+    <name>fu-id-spring-boot-starter</name>
+    <description>Fu ID Project</description>
+
+    <properties>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>ijunfu</id>
+            <name>weijunfu</name>
+            <email>ijunfu@163.com</email>
+            <timezone>GMT+8</timezone>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License</name>
+            <url>https://opensource.org/licenses/LGPL-3.0</url>
+            <distribution>repo</distribution> <!-- 指定许可证的分发方式 -->
+        </license>
+    </licenses>
+    <scm>
+        <connection>scm:git:git@github.com:weijunfu/fu-id-spring-boot-starter.git</connection>
+        <url>https://github.com/weijunfu/fu-id-spring-boot-starter</url>
+        <developerConnection>scm:git:git@github.com:weijunfu/fu-id-spring-boot-starter.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

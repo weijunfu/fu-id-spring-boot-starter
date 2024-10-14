@@ -1,0 +1,10 @@
+fu:
+  snowflake:
+   enabled: true # 启用雪花算法，默认关闭
+   workerId: 1 # 机器ID，默认值为1
+   dataCenterId: 1 # 数据中心ID，默认值为1
+  nano:
+    enabled: true # 启用 NanoId算法，默认关闭
+    size: 21 # 生成ID长度，默认值为21
+    alphabet: 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_ # 字符集，用于生成ID
+

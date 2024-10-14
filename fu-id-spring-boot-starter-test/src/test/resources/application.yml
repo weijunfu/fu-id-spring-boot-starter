@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: fu-id-spring-boot-starter
+  profiles:
+    active: dev

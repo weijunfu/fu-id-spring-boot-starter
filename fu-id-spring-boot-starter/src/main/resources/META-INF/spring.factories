@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.ijunfu.id.configuration.SnowflakeConfiguration,\
+  com.ijunfu.id.configuration.NanoConfiguration
