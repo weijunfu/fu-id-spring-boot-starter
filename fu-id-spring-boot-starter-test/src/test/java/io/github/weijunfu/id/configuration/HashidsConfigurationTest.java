@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**
- *
+ * Hashids Test
  * @author ijunfu
  * @version 1.0.0
  *

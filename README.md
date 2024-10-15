@@ -103,5 +103,25 @@ fu:
 
 #### 测试
 ```java
+@SpringBootTest
+public class HashidsConfigurationTest {
 
+    @Resource
+    private Hashids hashids;
+
+    @DisplayName("Hashids")
+    @Test
+    void hashids() {
+        long id = 1845896192316280832L;
+
+        String encoded = hashids.encode(id);
+        Assertions.assertNotNull(encoded);
+
+        long[] decoded = hashids.decode(encoded);
+        Assertions.assertEquals(1, decoded.length);
+
+        Assertions.assertEquals(id, decoded[0]);
+    }
+
+}
 ```
