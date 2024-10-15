@@ -11,9 +11,9 @@
 ### 引入依赖
 ```xml
 <dependency>
-    <groupId>com.ijunfu.id</groupId>
+    <groupId>io.github.weijunfu</groupId>
     <artifactId>fu-id-spring-boot-starter</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
