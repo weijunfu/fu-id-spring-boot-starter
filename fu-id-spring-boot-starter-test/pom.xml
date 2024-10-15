@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.ijunfu.id</groupId>
+        <groupId>io.github.weijunfu</groupId>
         <artifactId>fu-id-spring-boot-starter-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>fu-id-spring-boot-starter-test</artifactId>
-
+    <url>https://github.com/weijunfu/fu-id-spring-boot-starter</url>
     <name>fu-id-spring-boot-starter-test</name>
     <description>Fu ID Project</description>
 
@@ -49,9 +49,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.ijunfu.id</groupId>
+            <groupId>io.github.weijunfu</groupId>
             <artifactId>fu-id-spring-boot-starter</artifactId>
-            <version>1.0.0</version>
+            <version>${project.version}</version>
         </dependency>
 
         <dependency>

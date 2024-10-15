@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ijunfu.id</groupId>
+    <groupId>io.github.weijunfu</groupId>
     <artifactId>fu-id-spring-boot-starter-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>fu-id-spring-boot-starter-parent</name>
     <description>Fu ID Project</description>
@@ -20,6 +20,24 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>3.0.0</spring-boot.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <developers>
         <developer>
@@ -90,5 +108,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>

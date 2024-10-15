@@ -7,4 +7,8 @@ fu:
     enabled: true # 启用 NanoId算法，默认关闭
     size: 21 # 生成ID长度，默认值为21
     alphabet: 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-_ # 字符集，用于生成ID
+  hashids:
+    enabled: true # 启用 HashIds算法，默认关闭
+    alphabet: 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ # 字符集，用于生成ID
+    salt: ijunfu # 盐值，用于生成ID
 

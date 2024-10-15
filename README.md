@@ -2,8 +2,9 @@
 # FUID 工程
 
 ## 功能
--[x] 雪花算法
--[x] NanoId
+- [x] 雪花算法
+- [x] NanoId
+- [x] Hashids
 
 ## 使用
 
@@ -87,4 +88,20 @@ public class NanoConfigurationTest {
         log.info("{}ms", stopWatch.getTotalTimeMillis());
     }
 }
+```
+
+### Hashids
+
+#### 自定义配置
+```yaml
+fu:
+  hashids:
+    enabled: true # 启用 HashIds算法，默认关闭
+    alphabet: 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ # 字符集，用于生成ID
+    salt: ijunfu # 盐值，用于生成ID
+```
+
+#### 测试
+```java
+
 ```
